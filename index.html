@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/hammad6271" target="_blank">
+                    <img src="css/logos/linkedin-svgrepo-com.svg" alt="LinkedIn" , title="Connect with me" />
+                </a>
+    
+                <a href="mailto:hammad95632@gmail.com" target="_blank">
+                    <img src="css/logos/gmail-svgrepo-com.svg" alt="Gmail" , title="Mail Me" />
+                </a>
+    
+                <a href="https://github.com/Hammad-Anjum" target="_blank">
+                    <img src="css/logos/GitHub.svg" alt="GitHub" , title="My github" />
+                </a>
+    
+                <a href="https://www.datacamp.com/portfolio/hammad9" target="_blank">
+                    <img src="css/logos/datacamp-svgrepo-com.svg" alt="Datacamp" title="My Datacamp" />
+                </a>
+    
+    
+                <a href="https://www.datacamp.com/portfolio/Hammad-Anjum" target="_blank">
+                    <img src="css/logos/datacamp-svgrepo-com.svg" alt="Datacamp2" title="My Datacamp (second account)" />
+                </a>
+    
+                <a href="https://www.freecodecamp.org/fcc9901a92f-fcb8-444a-ac45-ac74c0e2b12c" target="_blank">
+                    <img src="css/logos/freecodecamp.png" alt="Freecodecamp" title="My Freecodecamp" />
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects-skills">Projects and Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <img src="css/pfp.png" alt="Your Photo" class="profile-pic">
+            <div class="text-container">
+                <h1>Welcome to My Portfolio</h1>
+                <h2 id="typed-text"></h2>
+                <h2>Your journey to know me begins here</h2>
+                <a href="#about" class="resumebutton">My Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am an aspiring data scientist, currently a senior at FAST-NUCES Lahore majoring in data science.</p>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-card">
+                        <h3>FAST-NUCES Lahore</h3>
+                        <p class="date">2021 - Present</p>
+                        <p>BS in Data Science</p>
+                    </div>
+                    <div class="timeline-card">
+                        <h3>New Middle East Int. School (Riyadh , Saudi Arabia)</h3>
+                        <p class="date">2018 - 2021</p>
+                        <p>O and A Levels</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects-skills">
+        <div class="projects-section">
+            <h2 class="projects-heading">Projects</h2>
+            <div class="carousel">
+                <div class="project">
+                    <a href="https://github.com/Hammad-Anjum/PDF-Text-RAG" target="_blank">
+                        <h3>PDF Retrieval Augmented Generation (RAG)</h3>
+                        <img src="css/imgs/rag.png" alt="Project 1">
+                        <p , class="htext">A RAG application using Langchain and OpenAI to communicate with pdf documents</p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Hammad-Anjum/House-Price-Prediction-Flask" target="_blank">
+                        <h3> Housing Price Prediction using Flask</h3>
+                        <img src="css/imgs/flaskml.jpg" alt="Project 3">
+                        <p , class="htext">An entire pipeline of analysing , visualising , processing and building a model on the Housing dataset and deployment using Flask</p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Hammad-Anjum/Airline-Satisfaction-Analysis" target="_blank">
+                        <h3> Airline Satisfaction Analysis</h3>
+                        <img src="css/imgs/airlanesat.png" alt="Project 2">
+                        <p , class="htext">An entire pipeline of analysing , visualising , processing and building a model on the Airline Satisfaction dataset</p>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/Hammad-Anjum/Youtube-Comments-Classifier" target="_blank">
+                        <h3> Youtube Comments Classifier</h3>
+                        <img src="css/imgs/ycc.png" alt="Project 4">
+                        <p , class="htext">A youtube comments classifier using selenium for web scrapping, and classifying the comments  using machine learning and deep learning models</p>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <h3 , class="tt"> All my projects are available : <a href="http://github.com/Hammad-Anjum?tab=repositories">here</a>
+        </div>
+
+        
+        <div class="skills-section">
+            <h2 class="skills-heading">Skills</h2>
+            <p , class = 'skills'> Languages</p>
+            <div class="skills-icons">
+                <img src="css/logos/python-svgrepo-com.svg" alt="Python" , title="Python">
+                <span , class="skill-name">Python</span>
+
+                <img src="css/logos/R.svg" alt="R" , title="R">
+                <img src="css/logos/C++ (CPlusPlus).svg" alt="C++" , title="C++">
+                <img src="css/logos/HTML5.svg" alt="HTML" , title="HTML">
+                <img src="css/logos/CSS3.svg" alt="CSS" , title="CSS">
+            </div>
+
+            <p , class = 'skills'> LLM frameworks</p>
+
+            <div class="skills-icons">
+                <img src="css/logos/simple-icons--langchain.svg" alt="Langchain" , title="Langchain">
+                <img src="css/logos/simple-icons--huggingface.svg" alt="HuggingFace" , title="HuggingFace">
+                <img src="css/logos/openai-svgrepo-com.svg" alt="OpenAI" , title="OpenAI">
+                
+            </div>
+
+            <p , class = 'skills'> Machine Learning and Deep Learning</p>
+
+            <div class="skills-icons">
+                <img src="css/logos/scikit-learn.svg" alt="Scikit" , title="Scikit">
+                <img src="css/logos/keras-svgrepo-com.svg" alt="Keras" , title="Keras">
+                <img src="css/logos/tensorflow-svgrepo-com.svg" alt="Tensorflow" , title="Tensorflow">
+                <img src="css/logos/pytorch-svgrepo-com.svg" alt="PyTorch" , title="PyTorch">
+                <img src="css/logos/OpenCV.svg" alt="OpenCV" , title="OpenCV">
+
+            </div>
+
+            <p , class = 'skills'> Data Manipulation, Preprocessing , Visualization </p>
+
+            <div class="skills-icons">
+                <img src="css/logos/pandas-svgrepo-com.svg" alt="Pandas" , title="Pandas">
+                <img src="css/logos/numpy-svgrepo-com.svg" alt="Numpy" , title="Numpy">
+                <img src="css/logos/Matplotlib.svg" alt="Matplotlib" , title="Matplotlib">
+                <img src="css/logos/seaborn-1.svg" alt="Seaborn" , title="Seaborn">
+                <img src="css/logos/Ploty.svg" alt="Plotly" , title="Plotly">
+                <img src="css/logos/nltk.png" alt="NLTK" , title="NLTK">
+                <img src="css/logos/scipy-seeklogo.svg" alt="scipy" , title="scipy">
+            </div>
+
+            <p , class = 'skills'> Other </p>
+
+            <div class="skills-icons">
+                <img src="css/logos/Flask.svg" alt="Flask" , title="Flask">
+                <img src="css/logos/GitHub.svg" alt="GitHub" , title="GitHub">
+                <img src="css/logos/Selenium.svg" alt="Selenium" , title="Selenium">
+                <img src="css/logos/Linux.svg" alt="Linux" , title="Linux">
+                <img src="css/logos/Streamlit.svg" alt="Streamlit" , title="Streamlit">
+                <img src="css/logos/Microsoft SQL Server.svg" alt="Microsoft SQL" , title="Microsoft SQL">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="certifications" class="section">
+        <h2 class="certifications-heading">Certifications</h2>
+        <p class="certifications-text">Following are my certifications</p>
+        
+        <div class="card-container">
+            <div class="card-wrapper">
+                <div class="card" style="background-image: url('css/comp-logo/datacamp-logo.jpg');">
+                    <h3 class="card-title">Professional Data Scientist</h3>
+                </div>
+                <div class="card-details">
+                    <p>Offered by: <strong>Datacamp</strong></p>
+                    <p>Issued: <strong>July 2024</strong></p>
+                    <div class="card-links">
+                        <a href="css/certs/pds.pdf" target="_blank">View Certificate</a>
+                        <a href="https://www.datacamp.com/certificate/DS0027319922812" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-wrapper">
+                <div class="card" style="background-image: url('css/comp-logo/datacamp-logo.jpg');">
+                    <h3 class="card-title">Associate Data Analyst</h3>
+                </div>
+                <div class="card-details">
+                    <p>Offered by: <strong>Datacamp</strong></p>
+                    <p>Issued: <strong>October 2023</strong></p>
+                    <div class="card-links">
+                        <a href="css/certs/ada.pdf" target="_blank">View Certificate</a>
+                        <a href="https://www.datacamp.com/certificate/DAA0016430756652" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card" style="background-image: url('css/comp-logo/freecodecamp-logo.png');">
+                    <h3 class="card-title">Machine Learning with Python</h3>
+                </div>
+                <div class="card-details">
+                    <p>Offered by: <strong>Freecodecamp</strong></p>
+                    <p>Issued: <strong>February 2024</strong></p>
+                    <div class="card-links">
+                        <a href="css/certs/mltens.png" target="_blank">View Certificate</a>
+                        <a href="https://www.freecodecamp.org/certification/fcc9901a92f-fcb8-444a-ac45-ac74c0e2b12c/machine-learning-with-python-v7" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2 , class = 'achievements-heading'>Achievements</h2>
+        <p , class = 'achievements-text'>Following are my achievements.</p>
+
+
+        <div class="card-container">
+            <div class="card-wrapper">
+
+                <div class="card" style="background-image: url('css/comp-logo/datacamp-logo.jpg');">
+                    <h3 class="card-title">Data Analyst with Power BI track</h3>
+                </div>
+                <div class="card-details">
+                    <p>Offered by: <strong>Datacamp</strong></p>
+                    <p>Issued: <strong>March 2024</strong></p>
+                    <div class="card-links">
+                        <a href="css/certs/powerbi.pdf" target="_blank">View Certificate</a>
+                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/86ebddbd98be7c91ac20848a6f8a710ac6da9962" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-wrapper">
+                <div class="card" style="background-image: url('css/comp-logo/datacamp-logo.jpg');">
+                    <h3 class="card-title">Associate Data Scientist Track</h3>
+                </div>
+                <div class="card-details">
+                    <p>Offered by: <strong>Datacamp</strong></p>
+                    <p>Issued: <strong>August 2023</strong></p>
+                    <div class="card-links">
+                        <a href="css/certs/ds.pdf" target="_blank">View Certificate</a>
+                        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/a13939fcc9e7b3ce37c30d1455579d1e7f40dfd2" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card" style="background-image: url('css/comp-logo/datacamp-logo.jpg');">
+                    <h3 class="card-title">Data Analyst with Python Track</h3>
+                </div>
+                <div class="card-details">
+                    <p>Offered by: <strong>Datacamp</strong></p>
+                    <p>Issued: <strong>August 2023</strong></p>
+                    <div class="card-links">
+                        <a href="css/certs/da.pdf" target="_blank">View Certificate</a>
+                        <a href="https://www.freecodecamp.org/certification/fcc9901a92f-fcb8-444a-ac45-ac74c0e2b12c/machine-learning-with-python-v7" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+
+        <div class="card-container">
+            <div class="card-wrapper">
+                
+                <div class="card" style="background-image: url('css/comp-logo/google-clouds.jpg');">
+                    <h3 class="card-title">My Google Cloud Skill Badges</h3>
+                </div>
+                <div class="card-details">
+                    <p>Offered by: <strong>Google</strong></p>
+                    <div class="card-links">
+                        <a href="https://www.cloudskillsboost.google/public_profiles/2d5feb4f-3145-427d-b2b5-e7d19e272c65" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+
+        <div class="card-container">
+            <div class="card-wrapper">
+                
+                <div class="card" style="background-image: url('css/comp-logo/deeplearning.png');">
+                    <h3 class="card-title">My Deeplearning.ai Badges</h3>
+                </div>
+                <div class="card-details">
+                    <p>Offered by: <strong>Deeplearning.ai</strong></p>
+                    <div class="card-links">
+                        <ul>
+                            <li><a href="https://learn.deeplearning.ai/accomplishments/af8cf17e-d4aa-4300-8f28-0fd361db83eb?usp=sharing" target="_blank">Prompt Engineering for Vision Models</a></li>
+                            <li><a href="https://learn.deeplearning.ai/accomplishments/b937746a-994f-4af5-80a3-169200c25405?usp=sharing" target="_blank">LangChain chat with Your Data</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+    </section>
+
+    <script>
+        var options = {
+            strings: ["Data Scientist", "Machine Learning Engineer", "AI Engineer", "Tech Enthusiast"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            showCursor: false
+        };
+        var typed = new Typed("#typed-text", options);
+
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+</body>
+</html>
