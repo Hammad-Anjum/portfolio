@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'export', // Enable static export
   images: {
-    unoptimized: true,
+    unoptimized: true, // Disable Image Optimization API as it's not available for static exports
   },
-  // If you're deploying to a subdirectory (e.g., username.github.io/portfolio)
-  // uncomment and update the following line:
-  // basePath: '/portfolio',
-  // assetPrefix: '/portfolio',
-};
+  // If you're using a basePath (for GitHub Pages user/organization sites)
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+  // If you're using assetPrefix (for GitHub Pages project sites)
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
+}
 
-export default nextConfig;
+module.exports = nextConfig
