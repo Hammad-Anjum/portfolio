@@ -25,6 +25,8 @@ import {
 } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import Navigation from "@/components/navigation"
+import { SiDatacamp} from "react-icons/si";
+
 
 export default function Home() {
   return (
@@ -111,7 +113,7 @@ export default function Home() {
                     <Badge variant="secondary">Data Science</Badge>
                     <Badge variant="secondary">Machine Learning</Badge>
                     <Badge variant="secondary">AI</Badge>
-                    <Badge variant="secondary">LLMS</Badge>
+                    <Badge variant="secondary">LLMs</Badge>
                   </div>
                 </div>
               </CardContent>
@@ -453,7 +455,6 @@ export default function Home() {
                       <Badge>Pandas</Badge>
                       <Badge>Seaborn</Badge>
                       <Badge>Matplotlib</Badge>
-                      <Badge>Streamlit</Badge>
                       <Badge>Flask</Badge>
                       <Badge>Selenium</Badge>
                       <Badge>BeautifulSoup</Badge>
@@ -473,6 +474,9 @@ export default function Home() {
                       <Badge>CI/CD</Badge>
                       <Badge>Google Cloud</Badge>
                       <Badge>Weights & Biases</Badge>
+                      <Badge>Pinecone</Badge>
+                      <Badge>ChromaDB</Badge>
+                      <Badge>Streamlit</Badge>                      
                     </div>
                   </CardContent>
                 </Card>
@@ -551,51 +555,69 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-2">
             <Card>
               <CardHeader>
-                <CardTitle>Dean's List</CardTitle>
-                <CardDescription>Stanford University, 2020-2023</CardDescription>
+                <CardTitle>Associate Data Scientist</CardTitle>
+                <CardDescription>Datacamp track, 2023</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Recognized for academic excellence by maintaining a GPA above 3.7 for all semesters.
+                  completed a comprehensive track on DataCamp covering essential data science skills, including Python, R, SQL, and machine learning of 80+ hours.
                 </p>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/a13939fcc9e7b3ce37c30d1455579d1e7f40dfd2" className="flex items-right gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Accomplishment</span>
+                    </a>
+                  </Button>
+                </div>
+
+              </CardContent>
+            </Card>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Data Analyst</CardTitle>
+                <CardDescription>Datacamp track, 2023</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  completed a comprehensive track on DataCamp covering essential data science skills, including Python, R, data literacy and visualizations of 30+ hours.
+                </p>
+
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/e21801983883725c8b8e6f9d0cbc00cb1df26ced" className="flex items-right gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Accomplishment</span>
+                    </a>
+                  </Button>
+                </div>
+
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>Hackathon Winner</CardTitle>
-                <CardDescription>Stanford Tech Challenge, 2022</CardDescription>
+                <CardTitle>Data Analyst with Power BI</CardTitle>
+                <CardDescription>Datacamp , 2024</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  First place in the annual Stanford Tech Challenge for developing an innovative healthcare application
-                  that helps patients manage chronic conditions.
+                  completed a comprehensive track on DataCamp covering essential data visualization methods and practices with Power BI, along with DAX, dashboards, reports of 50+ hours.
                 </p>
+
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/86ebddbd98be7c91ac20848a6f8a710ac6da9962" className="flex items-right gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Accomplishment</span>
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Merit Scholarship</CardTitle>
-                <CardDescription>Computer Science Department, 2021</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Awarded a merit-based scholarship for outstanding academic performance and contributions to department
-                  projects.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Best Undergraduate Research Project</CardTitle>
-                <CardDescription>CS Research Symposium, 2023</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Recognized for research on machine learning applications in healthcare, specifically for early disease
-                  detection algorithms.
-                </p>
-              </CardContent>
-            </Card>
+
+
           </div>
         </section>
 
@@ -608,14 +630,14 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card>
               <CardHeader>
-                <CardTitle>AWS Certified Developer</CardTitle>
-                <CardDescription>Amazon Web Services</CardDescription>
+                <CardTitle>Data Scientist</CardTitle>
+                <CardDescription>DataCamp</CardDescription>
               </CardHeader>
               <CardContent className="space-y-2">
-                <Badge>March 2023</Badge>
+                <Badge>July 2024</Badge>
                 <div className="flex">
                   <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="#" className="flex items-center gap-1">
+                    <a href="https://www.datacamp.com/certificate/DS0027319922812" className="flex items-center gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>Verify</span>
                     </a>
@@ -623,16 +645,18 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
+
+
             <Card>
               <CardHeader>
-                <CardTitle>TensorFlow Developer Certificate</CardTitle>
-                <CardDescription>Google</CardDescription>
+                <CardTitle>Machine Learning with Python</CardTitle>
+                <CardDescription>FreeCodeCamp</CardDescription>
               </CardHeader>
               <CardContent className="space-y-2">
-                <Badge>January 2023</Badge>
+                <Badge>February 2024</Badge>
                 <div className="flex">
                   <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="#" className="flex items-center gap-1">
+                    <a href="https://www.freecodecamp.org/certification/fcc9901a92f-fcb8-444a-ac45-ac74c0e2b12c/machine-learning-with-python-v7" className="flex items-center gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>Verify</span>
                     </a>
@@ -640,16 +664,19 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
+
+
+
             <Card>
               <CardHeader>
-                <CardTitle>Full Stack Web Development</CardTitle>
-                <CardDescription>Udacity</CardDescription>
+                <CardTitle>Associate Data Analyst</CardTitle>
+                <CardDescription>DataCamp</CardDescription>
               </CardHeader>
               <CardContent className="space-y-2">
-                <Badge>November 2022</Badge>
+                <Badge>October 2023</Badge>
                 <div className="flex">
                   <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="#" className="flex items-center gap-1">
+                    <a href="https://www.datacamp.com/certificate/DAA0016430756652" className="flex items-center gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>Verify</span>
                     </a>
@@ -657,6 +684,7 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
+            
           </div>
         </section>
 
@@ -707,9 +735,15 @@ export default function Home() {
                     </Button>
 
                     <Button variant="outline" size="icon" asChild>
-                      <a href="https://github.com/Hammad-Anjum" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <Github className="h-5 w-5" />
+                      <a href="https://www.datacamp.com/portfolio/Hammad-Anjum" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <SiDatacamp className="h-5 w-5" />
                       </a>
+                    </Button>
+
+                    <Button variant="outline" size="icon" asChild>
+                    <a href="https://www.datacamp.com/portfolio/hammad9" target="_blank" rel="noopener noreferrer" aria-label="DataCamp">
+                    <SiDatacamp className="h-5 w-5" />
+                    </a>
                     </Button>
 
                     
@@ -724,9 +758,6 @@ export default function Home() {
       <footer className="border-t py-6 md:py-8">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col items-center md:items-start gap-2">
-            <p className="text-sm text-muted-foreground text-center md:text-left">
-              © {new Date().getFullYear()} Jane Doe. All rights reserved.
-            </p>
           </div>
           <div className="flex gap-4">
             <Button variant="outline" size="sm" asChild>
