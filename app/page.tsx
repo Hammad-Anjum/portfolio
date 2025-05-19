@@ -25,7 +25,8 @@ import {
 } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import Navigation from "@/components/navigation"
-import { SiDatacamp} from "react-icons/si";
+import {SiDatacamp} from "react-icons/si";
+
 
 
 export default function Home() {
@@ -63,7 +64,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-background shadow-xl">
-            <Image src="/pfp.png" alt="Jane Doe" fill className="object-cover" priority />
+            <Image src={process.env.NODE_ENV === 'production' ? '/portfolio/pfp.png' : '/pfp.png'} alt="Jane Doe" fill className="object-cover" priority />
           </div>
         </section>
 
@@ -214,7 +215,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="aspect-video relative">
                 <Image
-                  src="/RAG.png?height=400&width=600"
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/RAG.png' : '/RAG.png'}
                   alt="AI Health Assistant"
                   fill
                   className="object-cover"
@@ -252,7 +253,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="aspect-video relative">
                 <Image
-                  src="/cognify-logo.png"
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/cognify-logo.png' : '/cognify-logo.png'}
                   alt="cognify"
                   fill
                   className="object-contain transition-all duration-300 group-hover:scale-110" />
@@ -293,7 +294,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="aspect-video relative">
                 <Image
-                  src="/ytcc.png?height=400&width=600"
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/ytcc.png' : '/ytcc.png'}
                   alt="Smart Home Dashboard"
                   fill
                   className="object-cover"
@@ -331,7 +332,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="aspect-video relative">
                 <Image
-                  src="/hppf.png?height=400&width=600"
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/hppf.png' : '/hppf.png'}
                   alt="Data Visualization Tool"
                   fill
                   className="object-cover"
@@ -369,7 +370,7 @@ export default function Home() {
           <Card className="overflow-hidden">
               <div className="aspect-video relative">
                 <Image
-                  src="/ats.png?height=400&width=600"
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/ats.png' : '/ats.png'}
                   alt="Data Visualization Tool"
                   fill
                   className="object-cover"
