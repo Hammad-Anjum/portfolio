@@ -398,7 +398,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="#" className="flex items-center gap-1">
+                    <a href="https://github.com/Hammad-Anjum/arxiv-summarization" className="flex items-center gap-1">
                       <Github className="h-4 w-4" />
                       <span>Code</span>
                     </a>
@@ -762,7 +762,7 @@ export default function Home() {
           </div>
           <div className="flex gap-4">
             <Button variant="outline" size="sm" asChild>
-              <a href="#" className="flex items-center gap-1">
+              <a href="https://drive.google.com/file/d/1Vadpps1IP0HTVtwXy32sStQcdz4G8E5_/view?usp=sharing" className="flex items-center gap-1">
                 <Download className="h-4 w-4" />
                 <span>Download Resume</span>
               </a>
