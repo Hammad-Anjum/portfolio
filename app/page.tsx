@@ -554,6 +554,52 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight">Achievements & Awards</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
+
+                        <Card>
+              <CardHeader>
+                <CardTitle>Introducing Generative AI with AWS</CardTitle>
+                <CardDescription>Udacity , 2025</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  completed a comprehensive track on as part of AWS AI/ML Scholar covering LLMs, Generative AI, and
+                  building AI applications with AWS, including SageMaker, PartyRock, and more of 20+ hours.
+                </p>
+
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://www.udacity.com/certificate/e/018e3e5c-4148-11f0-930d-9b64663606bf" className="flex items-right gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Accomplishment</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Data Analyst with Power BI</CardTitle>
+                <CardDescription>Datacamp , 2024</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  completed a comprehensive track on DataCamp covering essential data visualization methods and practices with Power BI, along with DAX, dashboards, reports of 50+ hours.
+                </p>
+
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/86ebddbd98be7c91ac20848a6f8a710ac6da9962" className="flex items-right gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Accomplishment</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            
             <Card>
               <CardHeader>
                 <CardTitle>Associate Data Scientist</CardTitle>
@@ -597,26 +643,8 @@ export default function Home() {
 
               </CardContent>
             </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Data Analyst with Power BI</CardTitle>
-                <CardDescription>Datacamp , 2024</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  completed a comprehensive track on DataCamp covering essential data visualization methods and practices with Power BI, along with DAX, dashboards, reports of 50+ hours.
-                </p>
 
-                <div className="flex gap-2">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/86ebddbd98be7c91ac20848a6f8a710ac6da9962" className="flex items-right gap-1">
-                      <ExternalLink className="h-4 w-4" />
-                      <span>View Accomplishment</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+
 
 
           </div>
