@@ -141,7 +141,7 @@ export default function Home() {
             <CardContent className="space-y-4">
               <div>
                 <h3 className="font-medium">Bachelor of Science in Data Science</h3>
-                <p className="text-muted-foreground">GPA: 3.2/4.0</p>
+                <p className="text-muted-foreground">GPA: 3.14/4.0</p>
               </div>
               <div>
                 <h4 className="font-medium">Relevant Coursework</h4>
@@ -241,7 +241,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/PDF-Text-RAG" className="flex items-center gap-1">
+                    <a href="https://github.com/Hammad-Anjum/PDF-Text-RAG" target="_blank" className="flex items-center gap-1">
                       <Github className="h-4 w-4" />
                       <span>Code</span>
                     </a>
@@ -282,7 +282,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="#" className="flex items-center gap-1">
+                    <a href="#" target="_blank" className="flex items-center gap-1">
                       <Github className="h-4 w-4" />
                       <span>Code</span>
                     </a>
@@ -320,7 +320,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/Youtube-Comments-Classifier" className="flex items-center gap-1">
+                    <a href="https://github.com/Hammad-Anjum/Youtube-Comments-Classifier" target="_blank" className="flex items-center gap-1">
                       <Github className="h-4 w-4" />
                       <span>Code</span>
                     </a>
@@ -357,7 +357,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/House-Price-Prediction-Flask" className="flex items-center gap-1">
+                    <a href="https://github.com/Hammad-Anjum/House-Price-Prediction-Flask" target="_blank" className="flex items-center gap-1">
                       <Github className="h-4 w-4" />
                       <span>Code</span>
                     </a>
@@ -398,9 +398,170 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/arxiv-summarization" className="flex items-center gap-1">
+                    <a href="https://github.com/Hammad-Anjum/arxiv-summarization" target="_blank" className="flex items-center gap-1">
                       <Github className="h-4 w-4" />
                       <span>Code</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/datacamp.png' : '/datacamp.png'}
+                  alt="Data Visualization Tool"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Datacamp Projects</CardTitle>
+                <CardDescription>Various projects completed on Datacamp</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Completed multiple projects on Datacamp to enhance data science and machine learning skills.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Python</Badge>
+                    <Badge variant="outline">HuggingFace</Badge>
+                    <Badge variant="outline">Transformers</Badge>
+                    <Badge variant="outline">Sklearn</Badge>
+                    <Badge variant="outline">Pandas</Badge>
+                    <Badge variant="outline">Numpy</Badge>
+                    <Badge variant="outline">Matplotlib</Badge>
+                    <Badge variant="outline">Seaborn</Badge>
+                    <Badge variant="outline">LLMs</Badge>
+                    <Badge variant="outline">LangChain</Badge>
+                    <Badge variant="outline">OpenAI</Badge>
+                    <Badge variant="outline">Llama</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects" target="_blank" className="flex items-center gap-1">
+                      <Github className="h-4 w-4" />
+                      <span>View All</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/DS - Twitter.png' : '/DS - Twitter.png'}
+                  alt="Data Visualization Tool"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Data Scientist Exam</CardTitle>
+                <CardDescription>Project completed for Data Scientist certification</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Completed the Data Scientist certification on Datacamp to enhance data science and machine learning skills.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Sklearn</Badge>
+                    <Badge variant="outline">Pandas</Badge>
+                    <Badge variant="outline">Numpy</Badge>
+                    <Badge variant="outline">Matplotlib</Badge>
+                    <Badge variant="outline">Seaborn</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/Data%20Scientist%20Professional%20Exam" target="_blank" className="flex items-center gap-1">
+                      <Github className="h-4 w-4" />
+                      <span>View All</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/DA Associate - Twitter.png' : '/DA Associate - Twitter.png'}
+                  alt="Data Analyst Associate Exam"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Data Analyst Associate Exam</CardTitle>
+                <CardDescription>Project completed for Data Analyst Associate certification</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Completed the Data Analyst Associate certification on Datacamp to enhance data analysis skills.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Pandas</Badge>
+                    <Badge variant="outline">Numpy</Badge>
+                    <Badge variant="outline">Matplotlib</Badge>
+                    <Badge variant="outline">Seaborn</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/Data%20Analyst%20Associate%20Exam" target="_blank" className="flex items-center gap-1">
+                      <Github className="h-4 w-4" />
+                      <span>View All</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/freecodecamp.png' : '/freecodecamp.png'}
+                  alt="Data Analyst Associate Exam"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Free Code Camp Projects</CardTitle>
+                <CardDescription>Projects completed for Free Code Camp certification</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Completed the Free Code Camp certification to enhance machine learning and AI skills.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">pyTorch</Badge>
+                    <Badge variant="outline">Numpy</Badge>
+                    <Badge variant="outline">Matplotlib</Badge>
+                    <Badge variant="outline">Seaborn</Badge>
+                    <Badge variant="outline">TensorFlow</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/FreeCodeCamp-MLwithTensorflow" target="_blank" className="flex items-center gap-1">
+                      <Github className="h-4 w-4" />
+                      <span>View All</span>
                     </a>
                   </Button>
                 </div>
@@ -555,20 +716,43 @@ export default function Home() {
           </div>
           <div className="grid gap-6 md:grid-cols-2">
 
-                        <Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Associate AI Engineer for Data Scientists</CardTitle>
+                <CardDescription>Datacamp , 2025</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  This career track equips data scientists with essential AI engineering skills, covering model deployment, 
+                  MLOps, deep learning (TensorFlow/PyTorch), and building scalable AI solutions of 40 hours.
+                </p>
+
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/d84c9dc78a87df7be2c875b7ea9f513fbd4b8658" target="_blank" className="flex items-right gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Accomplishment</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
               <CardHeader>
                 <CardTitle>Introducing Generative AI with AWS</CardTitle>
                 <CardDescription>Udacity , 2025</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  completed a comprehensive track on as part of AWS AI/ML Scholar covering LLMs, Generative AI, and
+                  Completed a comprehensive track on as part of AWS AI/ML Scholar covering LLMs, Generative AI, and
                   building AI applications with AWS, including SageMaker, PartyRock, and more of 20+ hours.
                 </p>
 
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://www.udacity.com/certificate/e/018e3e5c-4148-11f0-930d-9b64663606bf" className="flex items-right gap-1">
+                    <a href="https://www.udacity.com/certificate/e/018e3e5c-4148-11f0-930d-9b64663606bf" target="_blank" className="flex items-right gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>View Accomplishment</span>
                     </a>
@@ -590,7 +774,7 @@ export default function Home() {
 
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/86ebddbd98be7c91ac20848a6f8a710ac6da9962" className="flex items-right gap-1">
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/86ebddbd98be7c91ac20848a6f8a710ac6da9962" target="_blank" className="flex items-right gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>View Accomplishment</span>
                     </a>
@@ -598,6 +782,9 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
+
+
+            
 
             
             <Card>
@@ -611,7 +798,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/a13939fcc9e7b3ce37c30d1455579d1e7f40dfd2" className="flex items-right gap-1">
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/a13939fcc9e7b3ce37c30d1455579d1e7f40dfd2" target="_blank" className="flex items-right gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>View Accomplishment</span>
                     </a>
@@ -634,7 +821,7 @@ export default function Home() {
 
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/e21801983883725c8b8e6f9d0cbc00cb1df26ced" className="flex items-right gap-1">
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/e21801983883725c8b8e6f9d0cbc00cb1df26ced" target="_blank" className="flex items-right gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>View Accomplishment</span>
                     </a>
@@ -666,7 +853,7 @@ export default function Home() {
                 <Badge>July 2024</Badge>
                 <div className="flex">
                   <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="https://www.datacamp.com/certificate/DS0027319922812" className="flex items-center gap-1">
+                    <a href="https://www.datacamp.com/certificate/DS0027319922812" target="_blank" className="flex items-center gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>Verify</span>
                     </a>
@@ -685,7 +872,7 @@ export default function Home() {
                 <Badge>February 2024</Badge>
                 <div className="flex">
                   <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="https://www.freecodecamp.org/certification/fcc9901a92f-fcb8-444a-ac45-ac74c0e2b12c/machine-learning-with-python-v7" className="flex items-center gap-1">
+                    <a href="https://www.freecodecamp.org/certification/fcc9901a92f-fcb8-444a-ac45-ac74c0e2b12c/machine-learning-with-python-v7" target="_blank" className="flex items-center gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>Verify</span>
                     </a>
@@ -705,7 +892,7 @@ export default function Home() {
                 <Badge>October 2023</Badge>
                 <div className="flex">
                   <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="https://www.datacamp.com/certificate/DAA0016430756652" className="flex items-center gap-1">
+                    <a href="https://www.datacamp.com/certificate/DAA0016430756652" target="_blank" className="flex items-center gap-1">
                       <ExternalLink className="h-4 w-4" />
                       <span>Verify</span>
                     </a>
