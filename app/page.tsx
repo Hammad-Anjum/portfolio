@@ -522,7 +522,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/AI%20Engineer%20For%20Data%20Scientists%20Associate%20Exam" target="_blank" className="flex items-center gap-1">
+                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/AI%20Engineer%20for%20Data%20Scientists%20Associate%20Exam" target="_blank" className="flex items-center gap-1">
                       <Github className="h-4 w-4" />
                       <span>View All</span>
                     </a>
