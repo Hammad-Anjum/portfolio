@@ -453,7 +453,83 @@ export default function Home() {
               </CardContent>
             </Card>
 
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/freecodecamp.png' : '/freecodecamp.png'}
+                  alt="Data Analyst Associate Exam"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Free Code Camp Projects</CardTitle>
+                <CardDescription>Projects completed for Free Code Camp certification</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Completed the Free Code Camp certification to enhance machine learning and AI skills.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">pyTorch</Badge>
+                    <Badge variant="outline">Numpy</Badge>
+                    <Badge variant="outline">Matplotlib</Badge>
+                    <Badge variant="outline">Seaborn</Badge>
+                    <Badge variant="outline">TensorFlow</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/FreeCodeCamp-MLwithTensorflow" target="_blank" className="flex items-center gap-1">
+                      <Github className="h-4 w-4" />
+                      <span>View All</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
 
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/AI-data.png' : '/AI-data.png'}
+                  alt="Data Visualization Tool"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>AI Engineer for Data Scientists Exam</CardTitle>
+                <CardDescription>Project completed for AI Engineer for Data Scientists certification</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Completed the AI Engineer for Data Scientists certification on Datacamp to enhance data science, AI and deep learning skills.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Sklearn</Badge>
+                    <Badge variant="outline">Pandas</Badge>
+                    <Badge variant="outline">Numpy</Badge>
+                    <Badge variant="outline">LLMs</Badge>
+                    <Badge variant="outline">Deep Learning</Badge>
+                    <Badge variant="outline">PyTorch</Badge>
+                    
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/AI%20Engineer%20For%20Data%20Scientists%20Associate%20Exam" target="_blank" className="flex items-center gap-1">
+                      <Github className="h-4 w-4" />
+                      <span>View All</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
 
             <Card className="overflow-hidden">
               <div className="aspect-video relative">
@@ -530,43 +606,6 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden">
-              <div className="aspect-video relative">
-                <Image
-                  src={process.env.NODE_ENV === 'production' ? '/portfolio/freecodecamp.png' : '/freecodecamp.png'}
-                  alt="Data Analyst Associate Exam"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>Free Code Camp Projects</CardTitle>
-                <CardDescription>Projects completed for Free Code Camp certification</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
-                  Completed the Free Code Camp certification to enhance machine learning and AI skills.
-                </p>
-                <div>
-                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline">pyTorch</Badge>
-                    <Badge variant="outline">Numpy</Badge>
-                    <Badge variant="outline">Matplotlib</Badge>
-                    <Badge variant="outline">Seaborn</Badge>
-                    <Badge variant="outline">TensorFlow</Badge>
-                  </div>
-                </div>
-                <div className="flex gap-2">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/FreeCodeCamp-MLwithTensorflow" target="_blank" className="flex items-center gap-1">
-                      <Github className="h-4 w-4" />
-                      <span>View All</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
 
           </div>
         </section>
@@ -620,7 +659,9 @@ export default function Home() {
                       <Badge>Flask</Badge>
                       <Badge>Selenium</Badge>
                       <Badge>BeautifulSoup</Badge>
-
+                      <Badge>OpenCV</Badge>
+                      <Badge>OpenAI</Badge>
+                      <Badge>Llama</Badge>
                     </div>
                   </CardContent>
                 </Card>
@@ -638,7 +679,9 @@ export default function Home() {
                       <Badge>Weights & Biases</Badge>
                       <Badge>Pinecone</Badge>
                       <Badge>ChromaDB</Badge>
-                      <Badge>Streamlit</Badge>                      
+                      <Badge>Streamlit</Badge>
+                      <Badge>GradioUI</Badge>
+                      <Badge>Tensorboard</Badge>
                     </div>
                   </CardContent>
                 </Card>
@@ -769,7 +812,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  completed a comprehensive track on DataCamp covering essential data visualization methods and practices with Power BI, along with DAX, dashboards, reports of 50+ hours.
+                  Completed a comprehensive track on DataCamp covering essential data visualization methods and practices with Power BI, along with DAX, dashboards, reports of 50+ hours.
                 </p>
 
                 <div className="flex gap-2">
@@ -794,7 +837,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  completed a comprehensive track on DataCamp covering essential data science skills, including Python, R, SQL, and machine learning of 80+ hours.
+                  Completed a comprehensive track on DataCamp covering essential data science skills, including Python, R, SQL, and machine learning of 80+ hours.
                 </p>
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
@@ -816,7 +859,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  completed a comprehensive track on DataCamp covering essential data science skills, including Python, R, data literacy and visualizations of 30+ hours.
+                  Completed a comprehensive track on DataCamp covering essential data science skills, including Python, R, data literacy and visualizations of 30+ hours.
                 </p>
 
                 <div className="flex gap-2">
@@ -844,6 +887,27 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight">Certifications</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle>AI for Data Scientists</CardTitle>
+                <CardDescription>DataCamp</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <Badge>July 2025</Badge>
+                <div className="flex">
+                  <Button variant="link" size="sm" className="px-0" asChild>
+                    <a href="https://www.datacamp.com/certificate/AEDS0014706321482" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>Verify</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
             <Card>
               <CardHeader>
                 <CardTitle>Data Scientist</CardTitle>
