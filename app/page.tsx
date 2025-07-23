@@ -61,6 +61,9 @@ export default function Home() {
               <Button variant="outline" asChild>
                 <a href="#projects">View projects</a>
               </Button>
+              <Button variant="outline" asChild>
+                <a href="https://drive.google.com/file/d/16LX4YulKwCZdpiCV6e8t8hVZlzzPVExc/view?usp=sharing">My Resume</a>
+              </Button>
             </div>
           </div>
           <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-background shadow-xl">
@@ -498,6 +501,50 @@ export default function Home() {
             </Card>
 
 
+                      <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/asa.png' : '/asa.png'}
+                  alt="Data Visualization Tool"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Airline Satisfaction Analysis</CardTitle>
+                <CardDescription>Conducted analysis and built 7+ ML models on an airline satisfaction dataset</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Conducted EDA and predictive modeling on airline satisfaction data using Python (Pandas, Scikit-learn). 
+                  Identified critical service factors and developed a classification model with 94% F1-score.
+
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Python</Badge>
+                    <Badge variant="outline">Scikit-Learn</Badge>
+                    <Badge variant="outline">Matplotlib</Badge>
+                    <Badge variant="outline">NumPy</Badge>
+                    <Badge variant="outline">Pandas</Badge>
+                    <Badge variant="outline">SMOTE</Badge>
+                    <Badge variant="outline">LIME</Badge>
+                    <Badge variant="outline">SHaP</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/Airline-Satisfaction-Analysis" target="_blank" className="flex items-center gap-1">
+                      <Github className="h-4 w-4" />
+                      <span>Code</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
             <Card className="overflow-hidden">
               <div className="aspect-video relative">
                 <Image
@@ -625,12 +672,12 @@ export default function Home() {
                     <div className="flex flex-wrap gap-2">
                       <Badge>HuggingFace</Badge>
                       <Badge>LangChain</Badge>
-                      <Badge>openAI</Badge>
-                      <Badge>Scikit Learn</Badge>
+                      <Badge>OpenAI</Badge>
+                      <Badge>Scikit-Learn</Badge>
                       <Badge>TensorFlow</Badge>
                       <Badge>PyTorch</Badge>
                       <Badge>NLTK</Badge>
-                      <Badge>Numpy</Badge>
+                      <Badge>Numpy</Badge>  
                       <Badge>Pandas</Badge>
                       <Badge>Seaborn</Badge>
                       <Badge>Matplotlib</Badge>
@@ -639,7 +686,8 @@ export default function Home() {
                       <Badge>BeautifulSoup</Badge>
                       <Badge>OpenCV</Badge>
                       <Badge>OpenAI</Badge>
-                      <Badge>Llama</Badge>
+                      <Badge>Ollama</Badge>
+                      <Badge>GradioUI</Badge>
                     </div>
                   </CardContent>
                 </Card>
@@ -741,7 +789,7 @@ export default function Home() {
             <Card>
               <CardHeader>
                 <CardTitle>Associate AI Engineer for Data Scientists</CardTitle>
-                <CardDescription>Datacamp , 2025</CardDescription>
+                <CardDescription>Datacamp track, 2025</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
@@ -763,7 +811,7 @@ export default function Home() {
             <Card>
               <CardHeader>
                 <CardTitle>Introducing Generative AI with AWS</CardTitle>
-                <CardDescription>Udacity , 2025</CardDescription>
+                <CardDescription>Udacity, 2025</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
@@ -786,7 +834,7 @@ export default function Home() {
             <Card>
               <CardHeader>
                 <CardTitle>Data Analyst with Power BI</CardTitle>
-                <CardDescription>Datacamp , 2024</CardDescription>
+                <CardDescription>Datacamp track, 2024</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
@@ -855,6 +903,161 @@ export default function Home() {
 
 
 
+          </div>
+        </section>
+
+
+                {/* Exams Section */}
+        <section id="exams" className="py-16 scroll-mt-16">
+          <div className="flex items-center gap-2 mb-8">
+            <Award className="h-6 w-6 text-primary" />
+            <h2 className="text-3xl font-bold tracking-tight">Exams</h2>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/AI-data.png' : '/AI-data.png'}
+                  alt="AI Engineer for Data Scientists Exam"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>AI Engineer for Data Scientists Exam</CardTitle>
+                <CardDescription>Datacamp Certification Exam</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Completed the AI Engineer for Data Scientists certification exam covering deep learning, model deployment, and AI engineering concepts.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Topics Covered:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Deep Learning</Badge>
+                    <Badge variant="outline">Model Deployment</Badge>
+                    <Badge variant="outline">MLOps</Badge>
+                    <Badge variant="outline">TensorFlow</Badge>
+                    <Badge variant="outline">PyTorch</Badge>
+                    <Badge variant="outline">HuggingFace</Badge>
+                    <Badge variant="outline">Ollama</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://www.datacamp.com/certificate/AEDS0014706321482" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Certificate</span>
+                    </a>
+                  </Button>
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/AI%20Engineer%20for%20Data%20Scientists%20Associate%20Exam" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Project</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/DS - Twitter.png' : '/DS - Twitter.png'}
+                  alt="Data Scientist Exam"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Data Scientist Exam</CardTitle>
+                <CardDescription>Datacamp Certification Exam</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Completed the Data Scientist certification exam covering statistical analysis, machine learning, and data visualization.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Topics Covered:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Machine Learning</Badge>
+                    <Badge variant="outline">Statistics</Badge>
+                    <Badge variant="outline">Data Visualization</Badge>
+                    <Badge variant="outline">Python</Badge>
+                    <Badge variant="outline">SQL</Badge>
+                    <Badge variant="outline">Scikit-Learn</Badge>
+                    <Badge variant="outline">Pandas</Badge>
+                    <Badge variant="outline">NumPy</Badge>
+                    <Badge variant="outline">Matplotlib</Badge>
+                    <Badge variant="outline">Seaborn</Badge>
+                    <Badge variant="outline">Scipy</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://www.datacamp.com/certificate/DS0027319922812" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Certificate</span>
+                    </a>
+                  </Button>
+
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/Data%20Scientist%20Professional%20Exam" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Project</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/DA Associate - Twitter.png' : '/DA Associate - Twitter.png'}
+                  alt="Data Analyst Associate Exam"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>Data Analyst Associate Exam</CardTitle>
+                <CardDescription>Datacamp Certification Exam</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Completed the Data Analyst Associate certification exam covering data manipulation, visualization, and exploratory analysis.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Topics Covered:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Data Cleaning</Badge>
+                    <Badge variant="outline">Exploratory Analysis</Badge>
+                    <Badge variant="outline">Data Visualization</Badge>
+                    <Badge variant="outline">Pandas</Badge>
+                    <Badge variant="outline">Seaborn</Badge>
+                    <Badge variant="outline">Matplotlib</Badge>
+                    <Badge variant="outline">SQL</Badge>
+                    <Badge variant="outline">Python</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://www.datacamp.com/certificate/DAA0016430756652" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Certificate</span>
+                    </a>
+                  </Button>
+
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/Data%20Analyst%20Associate%20Exam" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Project</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
