@@ -203,6 +203,93 @@ export default function Home() {
           </Card>
         </section>
 
+        {/* Certifications Section */}
+        <section id="certifications" className="py-16 scroll-mt-16">
+          <div className="flex items-center gap-2 mb-8">
+            <FileText className="h-6 w-6 text-primary" />
+            <h2 className="text-3xl font-bold tracking-tight">Certifications</h2>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle>AI for Data Scientists</CardTitle>
+                <CardDescription>DataCamp</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <Badge>July 2025</Badge>
+                <div className="flex">
+                  <Button variant="link" size="sm" className="px-0" asChild>
+                    <a href="https://www.datacamp.com/certificate/AEDS0014706321482" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>Verify</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Data Scientist</CardTitle>
+                <CardDescription>DataCamp</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <Badge>July 2024</Badge>
+                <div className="flex">
+                  <Button variant="link" size="sm" className="px-0" asChild>
+                    <a href="https://www.datacamp.com/certificate/DS0027319922812" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>Verify</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Machine Learning with Python</CardTitle>
+                <CardDescription>FreeCodeCamp</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <Badge>February 2024</Badge>
+                <div className="flex">
+                  <Button variant="link" size="sm" className="px-0" asChild>
+                    <a href="https://www.freecodecamp.org/certification/fcc9901a92f-fcb8-444a-ac45-ac74c0e2b12c/machine-learning-with-python-v7" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>Verify</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Associate Data Analyst</CardTitle>
+                <CardDescription>DataCamp</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <Badge>October 2023</Badge>
+                <div className="flex">
+                  <Button variant="link" size="sm" className="px-0" asChild>
+                    <a href="https://www.datacamp.com/certificate/DAA0016430756652" target="_blank" className="flex items-center gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>Verify</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+            
+          </div>
+        </section>
 
 
         {/* Projects Section */}
@@ -212,43 +299,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="overflow-hidden">
-              <div className="aspect-video relative">
-                <Image
-                  src={process.env.NODE_ENV === 'production' ? '/portfolio/RAG.png' : '/RAG.png'}
-                  alt="AI Health Assistant"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>PDF text RAG</CardTitle>
-                <CardDescription>A RAG setup to extract PDF content and text for Q&A.</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
-                  Developed an AI-powered PDF text retriever that can provides contextual answers
-                  based upon the provided PDF.
-                </p>
-                <div>
-                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline">Python</Badge>
-                    <Badge variant="outline">Langchain</Badge>
-                    <Badge variant="outline">openAI</Badge>
-                    <Badge variant="outline">Streamlit</Badge>
-                  </div>
-                </div>
-                <div className="flex gap-2">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/PDF-Text-RAG" target="_blank" className="flex items-center gap-1">
-                      <Github className="h-4 w-4" />
-                      <span>Code</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            
 
             <Card className="overflow-hidden">
               <div className="aspect-video relative">
@@ -283,6 +334,45 @@ export default function Home() {
                 <div className="flex gap-2">
                   <Button size="sm" variant="outline" asChild>
                     <a href="#" target="_blank" className="flex items-center gap-1">
+                      <Github className="h-4 w-4" />
+                      <span>Code</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/RAG.png' : '/RAG.png'}
+                  alt="AI Health Assistant"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle>PDF text RAG</CardTitle>
+                <CardDescription>A RAG setup to extract PDF content and text for Q&A.</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Developed an AI-powered PDF text retriever that can provides contextual answers
+                  based upon the provided PDF.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Python</Badge>
+                    <Badge variant="outline">Langchain</Badge>
+                    <Badge variant="outline">openAI</Badge>
+                    <Badge variant="outline">Streamlit</Badge>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/PDF-Text-RAG" target="_blank" className="flex items-center gap-1">
                       <Github className="h-4 w-4" />
                       <span>Code</span>
                     </a>
@@ -491,125 +581,13 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden">
-              <div className="aspect-video relative">
-                <Image
-                  src={process.env.NODE_ENV === 'production' ? '/portfolio/AI-data.png' : '/AI-data.png'}
-                  alt="Data Visualization Tool"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>AI Engineer for Data Scientists Exam</CardTitle>
-                <CardDescription>Project completed for AI Engineer for Data Scientists certification</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
-                  Completed the AI Engineer for Data Scientists certification on Datacamp to enhance data science, AI and deep learning skills.
-                </p>
-                <div>
-                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline">Sklearn</Badge>
-                    <Badge variant="outline">Pandas</Badge>
-                    <Badge variant="outline">Numpy</Badge>
-                    <Badge variant="outline">LLMs</Badge>
-                    <Badge variant="outline">Deep Learning</Badge>
-                    <Badge variant="outline">PyTorch</Badge>
-                    
-                  </div>
-                </div>
-                <div className="flex gap-2">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/AI%20Engineer%20for%20Data%20Scientists%20Associate%20Exam" target="_blank" className="flex items-center gap-1">
-                      <Github className="h-4 w-4" />
-                      <span>View All</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="overflow-hidden">
-              <div className="aspect-video relative">
-                <Image
-                  src={process.env.NODE_ENV === 'production' ? '/portfolio/DS - Twitter.png' : '/DS - Twitter.png'}
-                  alt="Data Visualization Tool"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>Data Scientist Exam</CardTitle>
-                <CardDescription>Project completed for Data Scientist certification</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
-                  Completed the Data Scientist certification on Datacamp to enhance data science and machine learning skills.
-                </p>
-                <div>
-                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline">Sklearn</Badge>
-                    <Badge variant="outline">Pandas</Badge>
-                    <Badge variant="outline">Numpy</Badge>
-                    <Badge variant="outline">Matplotlib</Badge>
-                    <Badge variant="outline">Seaborn</Badge>
-                  </div>
-                </div>
-                <div className="flex gap-2">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/Data%20Scientist%20Professional%20Exam" target="_blank" className="flex items-center gap-1">
-                      <Github className="h-4 w-4" />
-                      <span>View All</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="overflow-hidden">
-              <div className="aspect-video relative">
-                <Image
-                  src={process.env.NODE_ENV === 'production' ? '/portfolio/DA Associate - Twitter.png' : '/DA Associate - Twitter.png'}
-                  alt="Data Analyst Associate Exam"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>Data Analyst Associate Exam</CardTitle>
-                <CardDescription>Project completed for Data Analyst Associate certification</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
-                  Completed the Data Analyst Associate certification on Datacamp to enhance data analysis skills.
-                </p>
-                <div>
-                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline">Pandas</Badge>
-                    <Badge variant="outline">Numpy</Badge>
-                    <Badge variant="outline">Matplotlib</Badge>
-                    <Badge variant="outline">Seaborn</Badge>
-                  </div>
-                </div>
-                <div className="flex gap-2">
-                  <Button size="sm" variant="outline" asChild>
-                    <a href="https://github.com/Hammad-Anjum/DataCamp-projects/tree/master/Data%20Analyst%20Associate%20Exam" target="_blank" className="flex items-center gap-1">
-                      <Github className="h-4 w-4" />
-                      <span>View All</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
 
           </div>
         </section>
 
+
+
+                
         {/* Skills Section */}
         <section id="skills" className="py-16 scroll-mt-16">
           <div className="flex items-center gap-2 mb-8">
@@ -880,93 +858,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Certifications Section */}
-        <section id="certifications" className="py-16 scroll-mt-16">
-          <div className="flex items-center gap-2 mb-8">
-            <FileText className="h-6 w-6 text-primary" />
-            <h2 className="text-3xl font-bold tracking-tight">Certifications</h2>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-
-            <Card>
-              <CardHeader>
-                <CardTitle>AI for Data Scientists</CardTitle>
-                <CardDescription>DataCamp</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <Badge>July 2025</Badge>
-                <div className="flex">
-                  <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="https://www.datacamp.com/certificate/AEDS0014706321482" target="_blank" className="flex items-center gap-1">
-                      <ExternalLink className="h-4 w-4" />
-                      <span>Verify</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Data Scientist</CardTitle>
-                <CardDescription>DataCamp</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <Badge>July 2024</Badge>
-                <div className="flex">
-                  <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="https://www.datacamp.com/certificate/DS0027319922812" target="_blank" className="flex items-center gap-1">
-                      <ExternalLink className="h-4 w-4" />
-                      <span>Verify</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Machine Learning with Python</CardTitle>
-                <CardDescription>FreeCodeCamp</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <Badge>February 2024</Badge>
-                <div className="flex">
-                  <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="https://www.freecodecamp.org/certification/fcc9901a92f-fcb8-444a-ac45-ac74c0e2b12c/machine-learning-with-python-v7" target="_blank" className="flex items-center gap-1">
-                      <ExternalLink className="h-4 w-4" />
-                      <span>Verify</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Associate Data Analyst</CardTitle>
-                <CardDescription>DataCamp</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <Badge>October 2023</Badge>
-                <div className="flex">
-                  <Button variant="link" size="sm" className="px-0" asChild>
-                    <a href="https://www.datacamp.com/certificate/DAA0016430756652" target="_blank" className="flex items-center gap-1">
-                      <ExternalLink className="h-4 w-4" />
-                      <span>Verify</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-            
-          </div>
-        </section>
 
         {/* Contact Section */}
         <section id="contact" className="py-16 scroll-mt-16">
