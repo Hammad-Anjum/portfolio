@@ -21,7 +21,7 @@ const navItems = [
   { name: "Skills", href: "#skills" },
   { name: "Achievements", href: "#achievements" },
   { name: "Exams", href: "#exams" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "#contact" },  
 ]
 
 export default function Navigation() {

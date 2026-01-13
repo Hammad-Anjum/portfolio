@@ -125,12 +125,211 @@ export default function Home() {
           </div>
         </section>
 
+    {/* Experience Section */}
+    <section id="experience" className="py-16 scroll-mt-16">
+      <div className="flex items-center gap-2 mb-8">
+        <Briefcase className="h-6 w-6 text-primary" />
+        <h2 className="text-3xl font-bold tracking-tight">Experience</h2>
+      </div>
+      
+      <div className="space-y-6">
+        {/* Experience 1 */}
+        <Card>
+          <CardHeader>
+            <div className="flex flex-col md:flex-row justify-between items-start gap-4">
+              <div className="flex-1">
+                <CardTitle>AI/ML Associate</CardTitle>
+                <CardDescription>
+                  <div className="flex flex-wrap items-center gap-3 mt-2">
+                    <span className="font-medium">Nexpred Solutions</span>
+                    <span className="flex items-center gap-1">
+                      <MapPin className="h-3 w-3" />
+                      Hybrid
+                    </span>
+                  </div>
+                </CardDescription>
+              </div>
+              <div className="flex flex-col md:items-end gap-2">
+                <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                  <BookOpen className="h-4 w-4" />
+                  Sept 2025 - Jan 2026
+                </span>
+              </div>
+            </div>
+          </CardHeader>
+          
+          <CardContent className="space-y-4">
+            <p className="text-muted-foreground">
+              Worked on cutting-edge AI projects focusing on natural language processing, retrieval augmented generation (RAG) and computer vision applications using AI.
+            </p>
+            
+            <div>
+              <h4 className="font-medium mb-2">Key Responsibilities:</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex gap-2">
+                  <span className="text-primary">•</span>
+                  <span>Developed and successfully deployed <b>5+ RAG systems</b> using LangChain and various vector databases to enhance information retrieval and generation capabilities <b>by 73%.</b></span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-primary">•</span>
+                  <span>Utilized openAI and external APIs to create <b>2-3 multimodal applications</b> leveraging <b>computer vision</b> and <b>NLP</b> to analyze images and text, delivering contextual recommendations with <b>85–95%</b> model accuracy.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-primary">•</span>
+                  <span>Created <b>internal tools</b> for automating data processing workflows along with lead generation reducing <b>manual workload by 86%.</b></span>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-medium mb-2">Technologies Used:</h4>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="outline">Python</Badge>
+                <Badge variant="outline">HuggingFace</Badge>
+                <Badge variant="outline">LangChain</Badge>
+                <Badge variant="outline">FAISS</Badge>
+                <Badge variant="outline">Pinecone</Badge>
+                <Badge variant="outline">ChromaDB</Badge>
+                <Badge variant="outline">openAI</Badge>
+                <Badge variant="outline">Streamlit</Badge>
+                <Badge variant="outline">Docker</Badge>
+                <Badge variant="outline">AWS</Badge>
+                <Badge variant="outline">Selenium</Badge>
+              </div>
+            </div>
+
+            <div className = "flex flex-col md:items-end gap-2">
+            <Button variant="outline" asChild >
+                <a href="">View recommendation letter</a>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Experience 2 */}
+        <Card>
+          <CardHeader>
+            <div className="flex flex-col md:flex-row justify-between items-start gap-4">
+              <div className="flex-1">
+                <CardTitle>RPA Developer</CardTitle>
+                <CardDescription>
+                  <div className="flex flex-wrap items-center gap-3 mt-2">
+                    <span className="font-medium">Sybros Tech</span>
+                    <span className="flex items-center gap-1">
+                      <MapPin className="h-3 w-3" />
+                      Lahore, Pakistan
+                    </span>
+                  </div>
+                </CardDescription>
+              </div>
+              <div className="flex flex-col md:items-end gap-2">
+                <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                  <BookOpen className="h-4 w-4" />
+                  Sep 2024 - March 2025
+                </span>
+              </div>
+            </div>
+          </CardHeader>
+          
+          <CardContent className="space-y-4">
+            <p className="text-muted-foreground">
+              Developed and maintained Robotic Process Automation (RPA) solutions to streamline business processes and improve operational efficiency.
+            </p>
+            
+            <div>
+              <h4 className="font-medium mb-2">Key Responsibilities:</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex gap-2">
+                  <span className="text-primary">•</span>
+                  <span>Created <b>10+ automation workflows</b> to help streamline business processes and reduce hands-on work <b>by 90%.</b></span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-primary">•</span>
+                  <span>Developed scripts for multiple CRMs such as <b>Hubspot, Zoho, and Airtable</b> to standardize internal workflows.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-primary">•</span>
+                  <span>Utilized PowerBI and Tableau to create dashboards for tracking key performance indicators for the automation workflows.</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-medium mb-2">Technologies Used:</h4>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="outline">UIpath</Badge>
+                <Badge variant="outline">Selenium</Badge>
+                <Badge variant="outline">n8n</Badge>
+                <Badge variant="outline">Zoho</Badge>
+                <Badge variant="outline">Airtable</Badge>
+                <Badge variant="outline">App Scripts</Badge>
+                <Badge variant="outline">Hubspot</Badge>
+                <Badge variant="outline">Python</Badge>
+                <Badge variant="outline">Mobile Automation</Badge>
+                <Badge variant="outline">PowerBI</Badge>
+              </div>
+            </div>
+
+
+            <div className = "flex flex-col md:items-end gap-2">
+            <Button variant="outline" asChild >
+                <a href="">View recommendation letter</a>
+              </Button>
+            </div>
+
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
         {/* Education Section */}
         <section id="education" className="py-16 scroll-mt-16">
           <div className="flex items-center gap-2 mb-8">
             <GraduationCap className="h-6 w-6 text-primary" />
             <h2 className="text-3xl font-bold tracking-tight">Education</h2>
           </div>
+
+          <Card>
+            <CardHeader>
+              <div className="flex justify-between items-start">
+                <div>
+                  <CardTitle>University of Technology Sydney</CardTitle>
+                  <CardDescription>Sydney, Australia</CardDescription>
+                </div>
+                <Badge> February 2026 - Current</Badge>
+              </div>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div>
+                <h3 className="font-medium">Masters of Artificial Intelligence</h3>
+                {/*<p className="text-muted-foreground">GPA: 3.14/4.0</p>*/}
+              </div>
+              {/*  Relevant Coursework can be added later 
+              <div>
+                <h4 className="font-medium">Relevant Coursework</h4>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
+                  <li className="flex items-center gap-2">
+                    <BookOpen className="h-4 w-4 text-primary" />
+                    <span>Data Structures & Algorithms</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <BookOpen className="h-4 w-4 text-primary" />
+                    <span>Data Analysis and Visualization</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <BookOpen className="h-4 w-4 text-primary" />
+                    <span>Generative AI</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <BookOpen className="h-4 w-4 text-primary" />
+                    <span>Artificial Intelligence</span>
+                  </li>
+                </ul>
+              </div>
+              */}
+            </CardContent>
+          </Card>
+
           <Card>
             <CardHeader>
               <div className="flex justify-between items-start">
@@ -138,7 +337,7 @@ export default function Home() {
                   <CardTitle>FAST NUCES</CardTitle>
                   <CardDescription>Lahore , Pakistan</CardDescription>
                 </div>
-                <Badge>May 2025</Badge>
+                <Badge> June 2021 - June 2025</Badge>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
