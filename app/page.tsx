@@ -49,10 +49,9 @@ export default function Home() {
         <section id="hero" className="py-20 md:py-28 flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="flex-1 space-y-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">Hammad Anjum</h1>
-            <h2 className="text-xl md:text-2xl font-medium text-muted-foreground">Data Scientist | AI / ML Engineer</h2>
+            <h2 className="text-xl md:text-2xl font-medium text-muted-foreground"> AI / ML Engineer | Automation Engineer | Data Scientist</h2>
             <p className="text-muted-foreground max-w-md">
-              Passionate about creating intuitive and impactful digital experiences. Recent data science graduate
-              with a focus on data science, machine learning and AI.
+              Passionate about creating intuitive and impactful digital experiences. Currently enrolled in Masters of Artificial Intelligence at University of Technology Sydney while having hands-on experience in AI/ML and RPA development.
             </p>
             <div className="flex gap-4 pt-4">
               <Button asChild>
@@ -62,7 +61,7 @@ export default function Home() {
                 <a href="#projects">View projects</a>
               </Button>
               <Button variant="outline" asChild>
-                <a href="https://drive.google.com/file/d/16LX4YulKwCZdpiCV6e8t8hVZlzzPVExc/view?usp=sharing" target="_blank">My Resume</a>
+                <a href="https://drive.google.com/file/d/1lT2BK-eIPg9xALYxe8sE1lS2EjzI0qM0/view?usp=sharing" target="_blank">My Resume</a>
               </Button>
             </div>
           </div>
@@ -80,19 +79,13 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-4">
               <p>
-                I'm a recent Data Science graduate from FAST-NUCES Lahore with a passion for building intuitive and impactful 
-                digital experiences. My journey in technology began with a fascination for how data can be transformed into
-                actionable insights. Over the years, I've honed my skills in data analysis, machine learning, Aritifical Intelligence
-                and software development, allowing me to tackle complex problems with innovative solutions.
+                I am an AI/ML Engineer and Data Science professional currently pursuing a Masters of Artificial Intelligence at the University of Technology Sydney (UTS). My journey began at FAST-NUCES Lahore, where I developed a fascination for transforming raw data into actionable intelligence.
               </p>
               <p>
-                I aim to leverage my technical skills to create impactful solutions that address real-world challenges.
-                I'm particularly interested in the intersection of technology and healthcare, where I believe innovative
-                software can make a significant difference.
+                Recently, I have focused on the cutting edge of Generative AI, successfully deploying over five RAG systems and building multimodal applications that bridge the gap between Computer Vision and NLP. I thrive at the intersection of innovation and efficiency—whether I'm fine-tuning a model to 95% accuracy or building automation workflows that reduce manual labor by 90%.
               </p>
               <p>
-                When I'm not coding, you can find me hiking in the mountains, trying every coffee place in existence or
-                experimenting with new recipes in the kitchen. 
+                When I’m not in the IDE, you’ll likely find me hiking around New South Wales, hunting for Sydney’s best espresso, or experimenting with new recipes in the kitchen.
               </p>
             </div>
             <Card>
@@ -104,20 +97,21 @@ export default function Home() {
                   <span className="font-medium">Location:</span>
                   <div className="flex items-center gap-1 text-muted-foreground">
                     <MapPin className="h-4 w-4" />
-                    <span>Lahore , PK</span>
+                    <span>Sydney, Australia</span>
                   </div>
                 </div>
                 <div>
                   <span className="font-medium">Education:</span>
-                  <div className="text-muted-foreground">B.S. Data Science</div>
+                  <div className="text-muted-foreground">M.S. Artificial Intelligence</div>
                 </div>
                 <div>
                   <span className="font-medium">Interests:</span>
                   <div className="flex flex-wrap gap-2 mt-1">
-                    <Badge variant="secondary">Data Science</Badge>
                     <Badge variant="secondary">Machine Learning</Badge>
                     <Badge variant="secondary">AI</Badge>
                     <Badge variant="secondary">LLMs</Badge>
+                    <Badge variant="secondary">Vibe Coding</Badge>
+                    <Badge variant="secondary">Automation</Badge>
                   </div>
                 </div>
               </CardContent>
@@ -152,7 +146,7 @@ export default function Home() {
               <div className="flex flex-col md:items-end gap-2">
                 <span className="flex items-center gap-1 text-sm text-muted-foreground">
                   <BookOpen className="h-4 w-4" />
-                  Sept 2025 - Jan 2026
+                  Sept 2025 - Dec 2025
                 </span>
               </div>
             </div>
@@ -913,6 +907,26 @@ export default function Home() {
 
                 <Card>
                   <CardHeader>
+                    <CardTitle>Automation & RPA</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>UiPath</Badge>
+                      <Badge>Power Automate</Badge>
+                      <Badge>n8n</Badge>
+                      <Badge>Zoho</Badge>
+                      <Badge>Airtable</Badge>
+                      <Badge>Hubspot</Badge>
+                      <Badge>Selenium</Badge>
+                      <Badge>App Scripts</Badge>
+
+                    </div>
+                  </CardContent>
+                </Card>
+
+
+                 <Card>
+                  <CardHeader>
                     <CardTitle>Databases</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -923,6 +937,7 @@ export default function Home() {
                     </div>
                   </CardContent>
                 </Card>
+
               </div>
             </TabsContent>
             <TabsContent value="soft" className="mt-6">
@@ -1292,7 +1307,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-primary" />
-                  <span>Lahore, Pakistan</span>
+                  <span>Sydney, Australia</span>
                 </div>
                 <div className="pt-4">
                   <h3 className="font-medium mb-3">Connect with me</h3>
@@ -1335,7 +1350,7 @@ export default function Home() {
           </div>
           <div className="flex gap-4">
             <Button variant="outline" size="sm" asChild>
-              <a href="https://drive.google.com/file/d/1Vadpps1IP0HTVtwXy32sStQcdz4G8E5_/view?usp=sharing" className="flex items-center gap-1">
+              <a href="https://drive.google.com/file/d/1lT2BK-eIPg9xALYxe8sE1lS2EjzI0qM0/view?usp=sharing" className="flex items-center gap-1">
                 <Download className="h-4 w-4" />
                 <span>Download Resume</span>
               </a>
