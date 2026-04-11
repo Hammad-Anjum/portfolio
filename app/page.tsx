@@ -495,6 +495,51 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+
+            <Card className="overflow-hidden">
+              <div className="aspect-video relative">
+                <Image
+                  src={process.env.NODE_ENV === 'production' ? '/portfolio/hackathon.png' : '/hackathon.png'}
+                  alt="HomeRoom"
+                  fill
+                  className="object-contain transition-all duration-300 group-hover:scale-110" />
+              </div>
+              <CardHeader>
+                <CardTitle>EduX Hackathon 2026 Oceania - HomeRoom</CardTitle>
+                <CardDescription>All in one AI powered teaching and parent communication platform</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  AI-powered teacher-parent platform for AU K-12. Curriculum RAG, multilingual chat, 
+                  wellbeing tracking, voice TTS, and CurricuLLM integration.
+                </p>
+                <div>
+                  <h4 className="text-sm font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline">Python</Badge>
+                    <Badge variant="outline">Hugging Face</Badge>
+                    <Badge variant="outline">Text-to-speech</Badge>
+                    <Badge variant="outline">FastAPI</Badge>
+                    <Badge variant="outline">ChromaDB</Badge>
+                    <Badge variant="outline">Google Translate</Badge>
+                    <Badge variant="outline"><strong>CurricuLLM</strong></Badge>
+                    <Badge variant="outline">WebSocket</Badge>
+                    <Badge variant="outline">React</Badge>
+                    <Badge variant="outline">JSON</Badge>
+                    
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/EduX-Hackathon-HomeRoom" target="_blank" className="flex items-center gap-1">
+                      <Github className="h-4 w-4" />
+                      <span>Code</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
             
 
             <Card className="overflow-hidden">
@@ -998,6 +1043,28 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight">Achievements & Awards</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Participated in EduX Hackathon Oceania 2026</CardTitle>
+                <CardDescription>Cambridge x InCubed, 2026</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Created an AI-powered teacher-parent platform for AU K-12. Curriculum RAG, multilingual chat, wellbeing tracking, voice TTS, and CurricuLLM integration.
+                </p>
+
+                <div className="flex gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <a href="https://github.com/Hammad-Anjum/EduX-Hackathon-HomeRoom" target="_blank" className="flex items-right gap-1">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>View Accomplishment</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
 
 
             <Card>
