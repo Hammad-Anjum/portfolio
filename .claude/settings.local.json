@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(grep -qE \"Ready in|ready - started|Local:\" \"C:\\\\\\\\Users\\\\\\\\Hammad\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Hammad-Desktop-repos-portfolio\\\\\\\\79b3f9a5-334a-4ded-bd95-605405e79f68\\\\\\\\tasks\\\\\\\\b86r8ghur.output\")",
+      "Bash(curl -sS -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -sS http://localhost:3000/)"
+    ]
+  }
+}
