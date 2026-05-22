@@ -22,8 +22,8 @@ export function About() {
           <p>
             Recently, I have focused on the cutting edge of Generative AI, successfully deploying
             over five RAG systems and building multimodal applications that bridge the gap between
-            Computer Vision and NLP. I thrive at the intersection of innovation and efficiency —
-            whether I&apos;m fine-tuning a model to 95% accuracy or building automation workflows
+            Computer Vision and NLP. I thrive at the intersection of innovation and efficiency where
+            I&apos;m fine-tuning a model to 95% accuracy or building automation workflows
             that reduce manual labor by 90%.
           </p>
           <p>

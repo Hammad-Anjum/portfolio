@@ -12,6 +12,30 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Gemma 4 Good Hackathon 2026 — Eidos",
+    subtitle: "On-device AI companion for autistic + ADHD adults",
+    image: "/eidos-hackathon.png",
+    alt: "Eidos",
+    imageFit: "contain",
+    blurb:
+      "Privacy-first iOS companion that runs Gemma 4 E2B entirely on-device via MLX Swift — zero network egress after the one-time model download. Four AuDHD-shaped flows: voice journaling, photo-to-3-step-plan, scripted grounding for sensory overwhelm, and energy-aware next-task picking.",
+    tech: [
+      "Swift 6",
+      "SwiftUI",
+      "MLX Swift",
+      "Gemma 4 E2B",
+      "Hugging Face",
+      "Apple Natural Language",
+      "SpeechTranscriber",
+      "SwiftData",
+      "EventKit",
+      "AVFoundation",
+      "Mac Catalyst",
+      "RAG",
+    ],
+    href: "https://github.com/Hammad-Anjum/Eidos",
+  },
+  {
     title: "EduX Hackathon 2026 Oceania — HomeRoom",
     subtitle: "All-in-one AI-powered teaching and parent communication platform",
     image: "/hackathon.png",
@@ -34,7 +58,7 @@ export const projects: Project[] = [
     href: "https://github.com/Hammad-Anjum/EduX-Hackathon-HomeRoom",
   },
   {
-    title: "Final Year Project — Cognify Academy",
+    title: "Bachelor Final Year Project — Cognify Academy",
     subtitle: "A full-stack university test preparation platform",
     image: "/cognify-logo.png",
     alt: "Cognify Academy",

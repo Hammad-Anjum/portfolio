@@ -35,17 +35,6 @@ export function Hero() {
         className="flex flex-col items-center gap-12 md:flex-row md:gap-16"
       >
         <div className="flex-1 space-y-5 text-center md:text-left">
-          <motion.div
-            variants={item}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-            </span>
-            Open to opportunities
-          </motion.div>
-
           <motion.h1
             variants={item}
             className="text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl"
@@ -130,7 +119,7 @@ export function Hero() {
 
         <motion.div variants={item} className="relative shrink-0">
           <div className="absolute -inset-3 rounded-full bg-[conic-gradient(from_0deg,hsl(var(--primary)),hsl(var(--primary-glow)),hsl(var(--accent-2)),hsl(var(--primary)))] opacity-70 blur-xl animate-spin-slow" />
-          <div className="relative h-56 w-56 overflow-hidden rounded-full border-4 border-background shadow-2xl md:h-72 md:w-72">
+          <div className="relative h-56 w-56 overflow-hidden rounded-full shadow-2xl md:h-72 md:w-72">
             <Image
               src={assetPath("/pfp.png")}
               alt="Hammad Anjum"
