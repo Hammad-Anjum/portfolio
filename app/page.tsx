@@ -15,13 +15,13 @@ import { SiteFooter } from "@/components/site-footer"
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
-      <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/70 backdrop-blur-xl supports-[backdrop-filter]:bg-background/50">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="font-bold tracking-tight">
-            <span className="text-gradient">Hammad Anjum</span>
+    <div className="min-h-screen">
+      <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-14 items-center justify-between">
+          <Link href="/" className="font-mono text-sm tracking-tight">
+            hammad.
           </Link>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <Navigation />
             <ModeToggle />
           </div>

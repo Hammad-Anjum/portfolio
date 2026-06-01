@@ -1,25 +1,19 @@
-import type { LucideIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 type Props = {
-  icon: LucideIcon
+  number: string
   title: string
-  description?: string
   className?: string
 }
 
-export function SectionHeading({ icon: Icon, title, description, className }: Props) {
+export function SectionHeading({ number, title, className }: Props) {
   return (
-    <div className={cn("mb-10 flex items-start gap-4", className)}>
-      <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-primary/30 bg-gradient-to-br from-primary/15 via-primary/5 to-transparent shadow-[0_0_20px_-8px_hsl(var(--primary)/0.6)]">
-        <Icon className="h-5 w-5 text-primary" />
-      </div>
-      <div className="space-y-1">
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{title}</h2>
-        {description ? (
-          <p className="text-sm text-muted-foreground">{description}</p>
-        ) : null}
-      </div>
+    <div className={cn("mb-10 flex items-center gap-5", className)}>
+      <h2 className="flex items-baseline gap-3 whitespace-nowrap text-2xl font-semibold tracking-tight md:text-3xl">
+        <span className="font-mono text-sm font-normal text-primary md:text-base">{number}.</span>
+        <span>{title}</span>
+      </h2>
+      <span className="h-px flex-1 bg-border" />
     </div>
   )
 }
