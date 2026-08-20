@@ -8,7 +8,7 @@ type SkillGroup = {
 const groups: SkillGroup[] = [
   {
     title: "Languages",
-    items: ["Python", "C++", "SQL", "R", "HTML/CSS"],
+    items: ["Python", "TypeScript", "Swift", "Rust", "C++", "SQL", "R", "HTML/CSS"],
   },
   {
     title: "ML / AI",
@@ -22,6 +22,8 @@ const groups: SkillGroup[] = [
       "NLTK",
       "OpenCV",
       "Ollama",
+      "MLX",
+      "LangGraph",
     ],
   },
   {
@@ -37,6 +39,20 @@ const groups: SkillGroup[] = [
       "Pinecone",
       "ChromaDB",
       "FAISS",
+      "Supabase",
+    ],
+  },
+  {
+    title: "Web & app",
+    items: [
+      "Next.js",
+      "React",
+      "Node.js",
+      "Fastify",
+      "Express",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "SwiftUI",
     ],
   },
   {

@@ -2,15 +2,63 @@ export type Project = {
   title: string
   subtitle: string
   image: string
+  /** Optional variant swapped in under the dark theme. */
+  imageDark?: string
   alt: string
   imageFit?: "cover" | "contain"
   blurb: string
   tech: string[]
   href: string | null
+  /** Which icon the card links show. Defaults to "github". */
+  link?: "github" | "external"
   cta?: string
 }
 
 export const projects: Project[] = [
+  {
+    title: "Loxa",
+    subtitle: "Open-source local AI node for hardware you own",
+    image: "/loxa-mark-ink.svg",
+    imageDark: "/loxa-mark-snow.svg",
+    alt: "Loxa",
+    imageFit: "contain",
+    blurb:
+      "Apple-Silicon-first node that handles the operations around a local model rather than replacing the engine: hardware-aware model matching, verified downloads, a supervised runtime that stays up, and one OpenAI-compatible endpoint for every local app. Apache-2.0, in early development.",
+    tech: [
+      "Rust",
+      "Apple Silicon",
+      "MLX",
+      "llama.cpp",
+      "OpenAI-compatible API",
+      "CLI",
+      "Apache-2.0",
+    ],
+    href: "https://loxa.dev",
+    link: "external",
+    cta: "Visit site",
+  },
+  {
+    title: "Brew",
+    subtitle: "Invite-only iOS app for event follow-ups that actually happen",
+    image: "/brew-mark.svg",
+    alt: "Brew",
+    imageFit: "contain",
+    blurb:
+      "Turns people met at networking events into scheduled meetings: mutual QR handshake, next-morning triage, invitation-scoped chat, and bilateral meeting confirmation. Swift 6 iOS client over a Fastify/Postgres service, with a fixed 15-person roster and trusted introductions gated on confirmed meeting history.",
+    tech: [
+      "Swift 6",
+      "SwiftUI",
+      "GRDB",
+      "TypeScript",
+      "Fastify",
+      "PostgreSQL",
+      "Kysely",
+      "EventKit",
+      "TestFlight",
+      "Render",
+    ],
+    href: null,
+  },
   {
     title: "Gemma 4 Good Hackathon 2026 — Eidos",
     subtitle: "On-device AI companion for autistic + ADHD adults",
@@ -69,6 +117,39 @@ export const projects: Project[] = [
     href: null,
   },
   {
+    title: "FlowDesk",
+    subtitle: "All-in-one workflow platform for creative agencies",
+    image: "/flowdesk-mark.svg",
+    alt: "FlowDesk",
+    imageFit: "contain",
+    blurb:
+      "Replaces Asana, spreadsheet trackers, and manual Drive filing with one tool. Kanban/list/calendar task views, Google Drive sync that files uploads under the right brand and month automatically, a live exportable tracker, and role-scoped multi-tenant access enforced by Postgres row-level security.",
+    tech: [
+      "Next.js 16",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Row-Level Security",
+      "Google Drive API",
+      "Realtime",
+      "shadcn/ui",
+      "Tailwind CSS",
+      "Resend",
+    ],
+    href: "https://github.com/Hammad-Anjum/flowdesk",
+  },
+  {
+    title: "MealNest",
+    subtitle: "A recipe-sharing and meal-planning platform",
+    image: "/mealnest-mark.svg",
+    alt: "MealNest",
+    imageFit: "contain",
+    blurb:
+      "Full-stack MERN app for discovering, saving, and planning meals. Recipe upload with images and ingredients, search by ingredient or dietary preference, auto-generated shopping lists from saved recipes, and community ratings and comments.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "REST API"],
+    href: "https://github.com/Hammad-Anjum/MealNest",
+  },
+  {
     title: "PDF Text RAG",
     subtitle: "A RAG setup to extract PDF content and text for Q&A",
     image: "/RAG.png",
@@ -117,6 +198,18 @@ export const projects: Project[] = [
       "Conducted EDA and predictive modeling on airline satisfaction data using Python (Pandas, Scikit-learn). Identified critical service factors and built a classifier with a 94% F1-score.",
     tech: ["Python", "Scikit-Learn", "Matplotlib", "NumPy", "Pandas", "SMOTE", "LIME", "SHAP"],
     href: "https://github.com/Hammad-Anjum/Airline-Satisfaction-Analysis",
+  },
+  {
+    title: "LangChain Academy",
+    subtitle: "Agents, tool use, and checkpointing with LangGraph",
+    image: "/langchain-mark.svg",
+    alt: "LangChain Academy",
+    imageFit: "contain",
+    blurb:
+      "Notes and exercises from the LangChain Academy foundation course, including a recipe-search agent that plans around whatever ingredients you have on hand using Tavily search over a LangGraph loop.",
+    tech: ["Python", "LangChain", "LangGraph", "HuggingFace", "DeepSeek-R1", "Tavily"],
+    href: "https://github.com/Hammad-Anjum/lca-langchain",
+    cta: "View All",
   },
   {
     title: "DataCamp Projects",

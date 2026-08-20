@@ -43,6 +43,24 @@ export function About() {
           </div>
           <div>
             <dt className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+              Building
+            </dt>
+            <dd className="mt-1">
+              <a
+                href="https://loxa.dev"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-colors hover:text-primary"
+              >
+                Loxa
+              </a>{" "}
+              <span className="text-muted-foreground">
+                — an open-source local AI node
+              </span>
+            </dd>
+          </div>
+          <div>
+            <dt className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
               Interests
             </dt>
             <dd className="mt-1 text-muted-foreground">{interests.join(" · ")}</dd>

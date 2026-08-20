@@ -28,8 +28,21 @@ export function Projects() {
                 fill
                 className={cn(
                   p.imageFit === "contain" ? "object-contain p-4" : "object-cover",
+                  p.imageDark && "dark:hidden",
                 )}
               />
+              {p.imageDark ? (
+                <Image
+                  src={assetPath(p.imageDark)}
+                  alt=""
+                  aria-hidden
+                  fill
+                  className={cn(
+                    "hidden dark:block",
+                    p.imageFit === "contain" ? "object-contain p-4" : "object-cover",
+                  )}
+                />
+              ) : null}
             </a>
 
             <div className="flex flex-1 flex-col gap-3">
@@ -56,7 +69,7 @@ export function Projects() {
                     aria-label={`${p.title} — open`}
                     className="shrink-0 text-muted-foreground transition-colors hover:text-foreground"
                   >
-                    {p.cta?.toLowerCase().includes("all") ? (
+                    {p.link === "external" || p.cta?.toLowerCase().includes("all") ? (
                       <ArrowUpRight className="h-4 w-4" />
                     ) : (
                       <Github className="h-4 w-4" />
